@@ -14,8 +14,8 @@ export default function () {
         </div>
       </div>
 
-      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
     </div>
+      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
     
   `;
 }
