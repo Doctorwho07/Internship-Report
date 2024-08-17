@@ -8,14 +8,14 @@ function toggleTheme() {
       .getElementById("theme-stylesheet")
       .setAttribute("href", "/src/styles/theme-dark.css");
     themeLabel.textContent = "Dark";
-    themeLabel.style.color = "white"; // Changer la couleur du texte en blanc pour le thème sombre
+    themeLabel.style.color = "white";
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     document
       .getElementById("theme-stylesheet")
       .setAttribute("href", "/src/styles/theme-light.css");
     themeLabel.textContent = "Light";
-    themeLabel.style.color = "#213547"; // Changer la couleur du texte en couleur foncée pour le thème clair
+    themeLabel.style.color = "#213547";
   }
 }
 
