@@ -29,3 +29,10 @@ Cette expérience a été très enrichissante et m'a permis de :
 - **[Résumer les acquis]** : [par exemple "consolider mes compétences techniques" 🛠️, "mieux comprendre le fonctionnement d'une entreprise" 🏢].
 
 Ce stage a également confirmé mon intérêt pour **[secteur/domaine]** 🌟, et je suis convaincu que les compétences acquises me seront précieuses pour la suite de mon parcours professionnel 🚀.
+
+
+
+to do :
+npm i
+npm install bootstrap-icons
+rpm run dev
