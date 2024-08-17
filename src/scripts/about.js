@@ -1,0 +1,14 @@
+import "/src/styles/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+document.querySelector("#app").innerHTML = `
+  <div>
+    <h1>Welcome to my internship report</h1>
+    <p class="">
+    Discover my journey and experiences working at Cimra!
+    </p>
+    <button type="button" class="btn btn-primary">Second Button</button>
+  </div>
+`;
