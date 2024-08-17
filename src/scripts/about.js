@@ -1,10 +1,21 @@
-// about.js
 export default function () {
   return `
-    <div>
+    <div class="container mt-5">
       <h1>À propos</h1>
-      <p>Voici la page à propos...</p>
-      <a href="" id="homeLink">Retour à l'accueil</a>
+      <p>Bienvenue sur la page À propos. Ici, vous trouverez des informations sur mon parcours et mes expériences.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Notre Histoire</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Notre Mission</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
     </div>
+    
   `;
 }
