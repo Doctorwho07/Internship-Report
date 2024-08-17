@@ -14,20 +14,20 @@ function loadPage(page) {
         document.querySelector("#app").innerHTML = content;
       });
       break;
-      // case "entreprise":
-      //   import("/src/scripts/entreprise.js").then((module) => {
-      //     content = module.default();
-      //     document.querySelector("#app").innerHTML = content;
-      //   });
-      break;
+    // case "entreprise":
+    //   import("/src/scripts/entreprise.js").then((module) => {
+    //     content = module.default();
+    //     document.querySelector("#app").innerHTML = content;
+    //   });
+    //   break;
     // Ajouter d'autres cas pour les autres pages
     default:
       document.querySelector("#app").innerHTML = `
         <div>
           <h1>Welcome to my internship report</h1>
           <p>Discover my journey and experiences working at Cimra!</p>
-          <a href="#" id="aboutLink">À propos</a>
-          <a href="#" id="entrepriseLink">Entreprise</a>
+          <button type="button" id="aboutLink" class="btn btn-primary">À propos</button>
+          <button type="button" id="entrepriseLink" class="btn btn-secondary">Entreprise</button>
           <button type="button" class="btn btn-primary">Primary Button</button>
         </div>
       `;
