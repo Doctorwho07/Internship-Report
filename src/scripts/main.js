@@ -136,6 +136,11 @@ function setupNavigation() {
       e.preventDefault();
       loadPage("remerciements");
     });
+
+  document.querySelector("#homeLink")?.addEventListener("click", (e) => {
+    e.preventDefault();
+    loadPage();
+  });
 }
 
 // Charger la page d'accueil par défaut
