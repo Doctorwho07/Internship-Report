@@ -26,7 +26,7 @@ function loadPage(page) {
         <div>
           <h1>Welcome to my internship report</h1>
           <p>Discover my journey and experiences working at Cimra!</p>
-          <a href="about" id="aboutLink">À propos</a>
+          <a href="#" id="aboutLink">À propos</a>
           <a href="#" id="entrepriseLink">Entreprise</a>
           <button type="button" class="btn btn-primary">Primary Button</button>
         </div>
