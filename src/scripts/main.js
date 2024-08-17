@@ -9,7 +9,7 @@ document.querySelector("#app").innerHTML = `
     <p class="">
     Discover my journey and experiences working at Cimra!
     </p>
-    <a href="/about">À propos</a>
+    <a href="about">À propos</a>
     <button type="button" class="btn btn-primary">Primary Button</button>
   </div>
 `;
