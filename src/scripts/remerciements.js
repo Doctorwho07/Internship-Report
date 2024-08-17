@@ -9,5 +9,6 @@ export default function () {
           <li>Merci à notre communauté.</li>
         </ul>
       </div>
+      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
     `;
 }

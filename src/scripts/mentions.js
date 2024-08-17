@@ -5,6 +5,7 @@ export default function() {
         <p>Les informations légales sur notre site sont détaillées ici.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat vehicula justo.</p>
       </div>
+      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
     `;
   }
   

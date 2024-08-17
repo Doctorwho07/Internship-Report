@@ -1,6 +1,11 @@
 :root {
+  color-scheme: light;
   color: #213547;
   background-color: #ffffff;
+}
+
+a {
+  color: #213547;
 }
 
 a:hover {
@@ -9,4 +14,12 @@ a:hover {
 
 button {
   background-color: #f9f9f9;
+  color: #213547;
+}
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #213547;
 }

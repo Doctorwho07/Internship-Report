@@ -3,9 +3,6 @@
   align-items: center;
   margin-top: 20px;
 }
-body {
-  background-color: transparent !important;
-}
 .theme-switch {
   position: relative;
   display: inline-block;

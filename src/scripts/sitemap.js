@@ -13,6 +13,7 @@ export default function() {
           <li class="list-group-item"><a href="#" id="remerciementsLink">Remerciements</a></li>
         </ul>
       </div>
+      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
     `;
   }
   
