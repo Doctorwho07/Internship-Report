@@ -1,25 +1,29 @@
 :root {
-  color-scheme: light;
-  color: #213547;
-  background-color: #ffffff;
+  color-scheme: dark;
+  background-color: #242424;
 }
 
 a {
-  color: #213547;
+  color: #ffffff !important;
 }
 
 a:hover {
-  color: #747bff;
+  color: #cfcfcf !important;
 }
 
 button {
-  background-color: #f9f9f9;
-  color: #213547;
-}
-body {
-  background-color: #ffffff;
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
 }
 
-h1 {
-  color: #213547;
+body {
+  background-color: #242424 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: #ffffff !important;
 }

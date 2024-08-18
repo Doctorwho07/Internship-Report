@@ -89,7 +89,7 @@ function loadPage(page) {
           </div>
         </div>
       `;
-      setupNavigation(); // Réinitialise la navigation sur la page d'accueil
+      setupNavigation();
   }
 }
 
@@ -142,9 +142,5 @@ function setupNavigation() {
     loadPage();
   });
 }
-
-// Charger la page d'accueil par défaut
 loadPage();
-
-// Appeler `setupNavigation` au chargement initial
 setupNavigation();
