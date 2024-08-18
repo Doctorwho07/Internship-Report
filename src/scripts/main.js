@@ -3,11 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeLabel = document.getElementById("theme-label");
   const themeStylesheet = document.getElementById("theme-stylesheet");
 
-  if (!themeStylesheet) {
-    console.error("L'élément 'theme-stylesheet' est introuvable dans le DOM.");
-    return;
-  }
-
   if (!themeToggle || !themeLabel) {
     console.error("Élément manquant:", { themeToggle, themeLabel });
     return;
