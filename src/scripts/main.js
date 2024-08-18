@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeLabel = document.getElementById("theme-label");
+  const themeStylesheet = document.getElementById("theme-stylesheet");
+
+  if (!themeStylesheet) {
+    console.error("L'élément 'theme-stylesheet' est introuvable dans le DOM.");
+    return;
+  }
+
+  if (!themeToggle || !themeLabel) {
+    console.error("Élément manquant:", { themeToggle, themeLabel });
+    return;
+  }
+
+  themeToggle.addEventListener("change", toggleTheme);
+  toggleTheme(); // Charger le thème initial
+});
+
 function toggleTheme() {
   const themeStylesheet = document.getElementById("theme-stylesheet");
   const themeLabel = document.getElementById("theme-label");
@@ -24,15 +43,3 @@ function toggleTheme() {
     themeLabel.style.color = "#213547";
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const themeToggle = document.getElementById("theme-toggle");
-
-  if (!themeToggle) {
-    console.error("Le thème toggle est introuvable");
-    return;
-  }
-
-  themeToggle.addEventListener("change", toggleTheme);
-  toggleTheme(); // Charger le thème initial
-});
