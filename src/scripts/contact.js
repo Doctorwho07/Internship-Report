@@ -1,5 +1,5 @@
-export default function() {
-    return `
+export default function () {
+  return `
       <div class="container mt-5">
         <h1>Contactez-nous</h1>
         <p>Vous avez des questions ? Nous serions ravis de vous entendre.</p>
@@ -19,7 +19,6 @@ export default function() {
           <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
       </div>
-      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
+      <button type="button" id="homeLink" class="btn btn-primary"> l'accueil</button>
     `;
-  }
-  
+}

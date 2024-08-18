@@ -52,7 +52,6 @@ export default function () {
             </div>
     
             <!-- Button -->
-            <button type="button" id="homeLink" class="btn btn-primary mt-3">Retour à l'accueil</button>
           </div>
         `;
 }

@@ -39,6 +39,15 @@ export default function renderNavbar() {
               <a class="nav-link button-link" href="#" id="remerciementsLink">Remerciements</a>
             </li>
           </ul>
+
+          <!-- Theme Toggle - Positioned at the right end -->
+          <div class="ml-auto theme-switch-wrapper">
+            <label class="theme-switch" for="theme-toggle">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="slider"></span>
+            </label>
+            <span id="theme-label">Clair</span>
+          </div>
         </div>
       </div>
     </nav>

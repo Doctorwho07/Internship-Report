@@ -1,5 +1,5 @@
-export default function() {
-    return `
+export default function () {
+  return `
       <div class="container mt-5">
         <h1>Plan du site</h1>
         <ul class="list-group">
@@ -13,7 +13,5 @@ export default function() {
           <li class="list-group-item"><a href="#" id="remerciementsLink">Remerciements</a></li>
         </ul>
       </div>
-      <button type="button" id="homeLink" class="btn btn-primary">Retour à l'accueil</button>
     `;
-  }
-  
+}
