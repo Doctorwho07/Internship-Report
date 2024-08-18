@@ -6,86 +6,83 @@ import renderNavbar from "/src/scripts/navbar.js";
 
 function loadPage(page) {
   let content;
+  // Inject the Navbar directly using the renderNavbar function
   document.getElementById("navbar").innerHTML = renderNavbar();
-  fetch("/src/components/navbar.html")
-    .then((response) => response.text())
-    .then((navbarHtml) => {
-      document.querySelector("#navbar").innerHTML = navbarHtml;
-      switch (page) {
-        case "about":
-          import("/src/scripts/about.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
 
-        case "entreprise":
-          import("/src/scripts/entreprise.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
+  switch (page) {
+    case "about":
+      import("/src/scripts/about.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
-        case "articles":
-          import("/src/scripts/articles.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
+    case "entreprise":
+      import("/src/scripts/entreprise.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
-        case "contact":
-          import("/src/scripts/contact.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
+    case "articles":
+      import("/src/scripts/articles.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
-        case "bilan":
-          import("/src/scripts/bilan.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
+    case "contact":
+      import("/src/scripts/contact.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
-        case "sitemap":
-          import("/src/scripts/sitemap.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
+    case "bilan":
+      import("/src/scripts/bilan.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
-        case "mentions":
-          import("/src/scripts/mentions.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
+    case "sitemap":
+      import("/src/scripts/sitemap.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
-        case "remerciements":
-          import("/src/scripts/remerciements.js").then((module) => {
-            content = module.default();
-            document.querySelector("#app").innerHTML = content;
-            setupNavigation();
-          });
-          break;
+    case "mentions":
+      import("/src/scripts/mentions.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
-        default:
-          document.querySelector("#app").innerHTML = `
-            <div class="container mt-5">
-              <h1>Bienvenue sur mon rapport de Stage chez Cimra</h1>
-              <p>Découvrez mon parcours et mes expériences de travail chez Cimra !</p>
-            </div>
-          `;
-          setupNavigation();
-      }
-    });
+    case "remerciements":
+      import("/src/scripts/remerciements.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
+
+    default:
+      document.querySelector("#app").innerHTML = `
+        <div class="container mt-5">
+          <h1>Bienvenue sur mon rapport de Stage chez Cimra</h1>
+          <p>Découvrez mon parcours et mes expériences de travail chez Cimra !</p>
+        </div>
+      `;
+      setupNavigation();
+  }
 }
 
 function setupNavigation() {
@@ -137,4 +134,5 @@ function setupNavigation() {
   });
 }
 
+// Initial load of the default page
 loadPage();

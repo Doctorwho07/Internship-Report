@@ -14,7 +14,7 @@ export default function () {
               Merci aux alternants 
               <a href="https://www.linkedin.com/in/lucas-sender-544131237/" target="_blank" class="linkedin-link"><strong>Lucas SENDER</strong></a>
               et 
-              <strong>Anisse</strong>.
+              <strong>Anisse VRIZ</strong>.
             </li>
             <li class="remerciements-item">
               Merci aux différents clients de l'entreprise <strong>CIMRA</strong>.
