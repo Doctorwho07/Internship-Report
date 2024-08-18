@@ -23,7 +23,6 @@ export default function () {
               Merci à l'équipe relation école et entreprise.
             </li>
           </ul>
-          <button type="button" id="homeLink" class="btn btn-primary custom-btn">Retour à l'accueil</button>
         </div>
       `;
 }

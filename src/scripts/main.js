@@ -2,10 +2,11 @@ import "/src/styles/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import renderNavbar from "/src/scripts/navbar.js";
 
 function loadPage(page) {
   let content;
-
+  document.getElementById("navbar").innerHTML = renderNavbar();
   fetch("/src/components/navbar.html")
     .then((response) => response.text())
     .then((navbarHtml) => {
