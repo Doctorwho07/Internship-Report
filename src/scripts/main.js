@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("theme-toggle");
   const themeLabel = document.getElementById("theme-label");
-  const themeStylesheet = document.getElementById("theme-stylesheet");
 
   if (!themeToggle || !themeLabel) {
     console.error("Élément manquant:", { themeToggle, themeLabel });
@@ -16,22 +15,47 @@ function toggleTheme() {
   const themeToggle = document.getElementById("theme-toggle");
   const themeLabel = document.getElementById("theme-label");
 
-  // Créez dynamiquement le lien du stylesheet
-  let themeStylesheet = document.getElementById("theme-stylesheet");
-  if (!themeStylesheet) {
-    themeStylesheet = document.createElement("link");
-    themeStylesheet.id = "theme-stylesheet";
-    themeStylesheet.rel = "stylesheet";
-    document.head.appendChild(themeStylesheet);
-  }
-
   if (themeToggle.checked) {
-    themeStylesheet.href = "/src/styles/theme-dark.css";
+    applyDarkTheme();
     themeLabel.textContent = "Dark";
     themeLabel.style.color = "white";
   } else {
-    themeStylesheet.href = "/src/styles/theme-light.css";
+    applyLightTheme();
     themeLabel.textContent = "Light";
     themeLabel.style.color = "#213547";
   }
+}
+
+function applyDarkTheme() {
+  const style = document.createElement("style");
+  style.innerHTML = `
+    body {
+      background-color: #121212;
+      color: white;
+    }
+    .theme-switch-wrapper {
+      background-color: #333;
+    }
+    .slider {
+      background-color: #444;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function applyLightTheme() {
+  const style = document.createElement("style");
+  style.innerHTML = `
+    body {
+      background-color: white;
+      color: #213547;
+    }
+    .theme-switch-wrapper {
+      background-color: #f5f5f5;
+    }
+    .slider {
+      background-color: #ccc;
+    }
+  `;
+  document.head.appendChild(style);
 }
