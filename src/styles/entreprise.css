@@ -1,0 +1,49 @@
+.container {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #213547;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.card {
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.list-group-item {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #004494;
+  border-color: #004494;
+}

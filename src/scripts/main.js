@@ -3,97 +3,90 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-// Fonction pour charger dynamiquement le contenu
 function loadPage(page) {
   let content;
 
-  switch (page) {
-    case "about":
-      import("/src/scripts/about.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation(); // Réinitialise la navigation après le chargement
-      });
-      break;
+  fetch("/src/components/navbar.html")
+    .then((response) => response.text())
+    .then((navbarHtml) => {
+      document.querySelector("#navbar").innerHTML = navbarHtml;
+      switch (page) {
+        case "about":
+          import("/src/scripts/about.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    case "entreprise":
-      import("/src/scripts/entreprise.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation(); // Réinitialise la navigation après le chargement
-      });
-      break;
+        case "entreprise":
+          import("/src/scripts/entreprise.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    case "articles":
-      import("/src/scripts/articles.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation();
-      });
-      break;
+        case "articles":
+          import("/src/scripts/articles.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    case "contact":
-      import("/src/scripts/contact.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation();
-      });
-      break;
+        case "contact":
+          import("/src/scripts/contact.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    case "bilan":
-      import("/src/scripts/bilan.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation();
-      });
-      break;
+        case "bilan":
+          import("/src/scripts/bilan.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    case "sitemap":
-      import("/src/scripts/sitemap.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation();
-      });
-      break;
+        case "sitemap":
+          import("/src/scripts/sitemap.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    case "mentions":
-      import("/src/scripts/mentions.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation();
-      });
-      break;
+        case "mentions":
+          import("/src/scripts/mentions.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    case "remerciements":
-      import("/src/scripts/remerciements.js").then((module) => {
-        content = module.default();
-        document.querySelector("#app").innerHTML = content;
-        setupNavigation();
-      });
-      break;
+        case "remerciements":
+          import("/src/scripts/remerciements.js").then((module) => {
+            content = module.default();
+            document.querySelector("#app").innerHTML = content;
+            setupNavigation();
+          });
+          break;
 
-    default:
-      document.querySelector("#app").innerHTML = `
-        <div class="container mt-5">
-          <h1>Welcome to my internship report</h1>
-          <p>Discover my journey and experiences working at Cimra!</p>
-          <div class="d-grid gap-2 d-md-block">
-            <button type="button" id="aboutLink" class="btn btn-primary">À propos</button>
-            <button type="button" id="entrepriseLink" class="btn btn-secondary">Entreprise</button>
-            <button type="button" id="articlesLink" class="btn btn-info">Articles</button>
-            <button type="button" id="contactLink" class="btn btn-warning">Contact</button>
-            <button type="button" id="bilanLink" class="btn btn-dark">Bilan</button>
-            <button type="button" id="sitemapLink" class="btn btn-light">Sitemap</button>
-            <button type="button" id="mentionsLink" class="btn btn-primary">Mentions</button>
-            <button type="button" id="remerciementsLink" class="btn btn-success">Remerciements</button>
-          </div>
-        </div>
-      `;
-      setupNavigation();
-  }
+        default:
+          document.querySelector("#app").innerHTML = `
+            <div class="container mt-5">
+              <h1>Bienvenue sur mon rapport de Stage chez Cimra</h1>
+              <p>Découvrez mon parcours et mes expériences de travail chez Cimra !</p>
+            </div>
+          `;
+          setupNavigation();
+      }
+    });
 }
 
-// Configurer la navigation pour intercepter les clics
 function setupNavigation() {
   document.querySelector("#aboutLink")?.addEventListener("click", (e) => {
     e.preventDefault();
@@ -142,5 +135,5 @@ function setupNavigation() {
     loadPage();
   });
 }
+
 loadPage();
-setupNavigation();

@@ -1,0 +1,58 @@
+/* Navbar Styling */
+.navbar {
+  border-bottom: 1px solid #e0e0e0; /* Bordure légère pour délimiter la navbar */
+  padding: 0.5rem 1rem; /* Espacement général */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-weight: 600; /* Font-weight légèrement plus épais */
+  font-size: 1.5rem; /* Taille du texte du brand */
+  color: #333; /* Couleur du texte du brand */
+  text-decoration: none; /* Enlever le soulignement */
+}
+
+/* Navbar Links */
+.navbar-nav {
+  margin-left: auto; /* Aligner à droite */
+}
+
+/* Nav Items */
+.nav-item {
+  margin: 0 10px; /* Espacement entre les éléments */
+}
+
+/* Button Link Styling */
+.button-link {
+  display: inline-block;
+  padding: 10px 15px; /* Padding pour les boutons */
+  border-radius: 4px; /* Coins arrondis pour les boutons */
+  font-weight: 500;
+  text-decoration: none;
+  color: #333; /* Couleur du texte initiale */
+  background-color: #fff; /* Fond blanc */
+  border: 2px solid transparent; /* Bordure transparente initiale */
+  transition: all 0.3s ease; /* Animation fluide */
+}
+
+/* Hover Effect */
+.button-link:hover,
+.button-link:focus {
+  color: #fff; /* Couleur du texte au survol */
+  background-color: #007bff; /* Fond bleu au survol */
+  border-color: #007bff; /* Bordure bleue au survol */
+}
+
+/* Spécificité des Couleurs au Survol */
+#aboutLink:hover,
+#entrepriseLink:hover,
+#articlesLink:hover,
+#contactLink:hover,
+#bilanLink:hover,
+#sitemapLink:hover,
+#mentionsLink:hover,
+#remerciementsLink:hover {
+  background-color: #00f2ffa7; /* Couleur de fond au survol */
+  border-color: #007bff; /* Couleur de bordure au survol */
+  color: #fff; /* Couleur du texte au survol */
+}
