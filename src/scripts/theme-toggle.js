@@ -50,9 +50,6 @@ function applyLightTheme() {
       background-color: white;
       color: #213547;
     }
-    .theme-switch-wrapper {
-      background-color: #f5f5f5;
-    }
     .slider {
       background-color: #ccc;
     }
