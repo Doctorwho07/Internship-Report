@@ -1,24 +1,16 @@
 export default function () {
   return `
       <div class="container mt-5">
-        <h1>Contactez-nous</h1>
-        <p>Vous avez des questions ? Nous serions ravis de vous entendre.</p>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="name" placeholder="Votre nom">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Votre email">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
+        <h1>Contactez-moi</h1>
+        <p>Vous avez des questions ou vous souhaitez nous contacter directement ? Voici comment vous pouvez me joindre :</p>
+        <div class="mb-4">
+          <h3>Contact Direct</h3>
+          <p><strong>Email :</strong> <a href="mailto:alexis.rouches@icloud.com">alexis.rouches@icloud.com</a></p>
+          <p><strong>Téléphone :</strong> <a href="tel:0778221121">0778221121</a></p>
+        </div>
+        <div class="alert alert-info" role="alert">
+          Le formulaire de contact n'est pas encore opérationnel. Veuillez utiliser les informations ci-dessus pour nous contacter.
+        </div>
       </div>
-      <button type="button" id="homeLink" class="btn btn-primary"> l'accueil</button>
     `;
 }
