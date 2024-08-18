@@ -1,0 +1,64 @@
+/* Container Styling */
+.remerciements-container {
+  background-color: #f8f9fa; /* Couleur de fond légère */
+  padding: 30px;
+  border-radius: 10px; /* Coins arrondis pour le conteneur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+}
+
+/* Title Styling */
+.remerciements-title {
+  font-size: 2rem; /* Taille de police du titre */
+  color: #007bff; /* Couleur bleue pour le titre */
+  font-weight: 700; /* Titre en gras */
+  margin-bottom: 20px; /* Espacement sous le titre */
+  text-align: center; /* Centrer le titre */
+}
+
+/* Paragraph Styling */
+.remerciements-text {
+  font-size: 1.25rem; /* Taille de police du texte */
+  color: #343a40; /* Couleur sombre pour le texte */
+  margin-bottom: 20px; /* Espacement sous le paragraphe */
+  text-align: center; /* Centrer le texte */
+}
+
+/* List Styling */
+.remerciements-list {
+  list-style-type: none; /* Supprimer les puces de la liste */
+  padding: 0;
+  font-size: 1rem; /* Taille de police des éléments de liste */
+  color: #495057; /* Couleur du texte de la liste */
+}
+
+.remerciements-item {
+  margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+  padding: 10px;
+  background-color: #ffffff; /* Fond blanc pour chaque élément */
+  border-radius: 5px; /* Coins arrondis */
+  border: 1px solid #e0e0e0; /* Bordure légère */
+  transition: background-color 0.3s ease; /* Transition pour le changement de couleur */
+}
+
+.remerciements-item:hover {
+  background-color: #f1f1f1; /* Couleur de fond au survol */
+}
+
+/* Button Styling */
+.custom-btn {
+  display: block;
+  margin: 30px auto 0 auto; /* Centrer le bouton */
+  padding: 10px 20px; /* Ajustement du padding */
+  font-size: 1.1rem; /* Taille du texte du bouton */
+  border-radius: 5px; /* Coins arrondis */
+  background-color: #007bff; /* Couleur de fond bleue */
+  color: #fff; /* Couleur du texte */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transitions fluides */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.custom-btn:hover {
+  background-color: #0056b3; /* Couleur de fond plus foncée au survol */
+  transform: translateY(-2px); /* Léger déplacement vers le haut au survol */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre accentuée au survol */
+}
