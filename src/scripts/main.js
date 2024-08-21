@@ -6,7 +6,6 @@ import renderNavbar from "/src/scripts/navbar.js";
 
 function loadPage(page) {
   let content;
-  // Inject the Navbar directly using the renderNavbar function
   document.getElementById("navbar").innerHTML = renderNavbar();
 
   switch (page) {
@@ -73,14 +72,21 @@ function loadPage(page) {
         setupNavigation();
       });
       break;
+    case "home":
+      import("/src/scripts/accueil.js").then((module) => {
+        content = module.default();
+        document.querySelector("#app").innerHTML = content;
+        setupNavigation();
+      });
+      break;
 
     default:
       document.querySelector("#app").innerHTML = `
-        <div class="container mt-5">
-          <h1>Bienvenue sur mon rapport de Stage chez Cimra</h1>
-          <p>Découvrez mon parcours et mes expériences de travail chez Cimra !</p>
-        </div>
-      `;
+          <div class="container mt-5">
+            <h1>Erreur 404</h1>
+            <p>La page que vous recherchez n'existe pas. <a href="#" id="homeLink">Retour à l'accueil</a></p>
+          </div>
+        `;
       setupNavigation();
   }
 }
@@ -127,12 +133,15 @@ function setupNavigation() {
       e.preventDefault();
       loadPage("remerciements");
     });
-
   document.querySelector("#homeLink")?.addEventListener("click", (e) => {
     e.preventDefault();
-    loadPage();
+    loadPage("home");
+  });
+  window.addEventListener("load", () => {
+    const currentPath = window.location.pathname;
+    if (currentPath === "/" || currentPath === "/homeLink") {
+      loadPage("home");
+    }
   });
 }
-
-// Initial load of the default page
 loadPage();
