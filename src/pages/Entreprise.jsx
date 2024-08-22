@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Assurez-vous d'importer Bootstrap CSS
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/entreprise.css";
 const Entreprise = () => (
   <div className="container mt-5">
     <h1 className="mb-4">L'Entreprise CIMRA</h1>
@@ -8,13 +8,13 @@ const Entreprise = () => (
       Découvrez comment CIMRA peut transformer vos défis informatiques en
       solutions simples et efficaces.
     </p>
-
-    {/* Section Qui Sont-Ils ? */}
     <div className="row mb-5">
       <div className="col-md-12">
-        <div className="card mb-4 shadow-sm">
+        <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">Qui Sont-Ils ?</h2>
+          </div>
           <div className="card-body">
-            <h2 className="card-title">Qui Sont-Ils ?</h2>
             <p className="card-text">
               <strong>CIMRA</strong> est une entreprise informatique située à
               Lyon, spécialisée dans la fourniture de solutions informatiques
@@ -27,8 +27,6 @@ const Entreprise = () => (
         </div>
       </div>
     </div>
-
-    {/* Section Les Services Proposés */}
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
@@ -91,7 +89,6 @@ const Entreprise = () => (
       </div>
     </div>
 
-    {/* Section L'Équipe Derrière CIMRA */}
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
@@ -121,7 +118,6 @@ const Entreprise = () => (
       </div>
     </div>
 
-    {/* Section Contact */}
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
@@ -133,26 +129,27 @@ const Entreprise = () => (
               Pour toute question ou information supplémentaire, voici comment
               joindre CIMRA :
             </p>
-            <p>
-              <strong>Adresse :</strong> 50 Rue Ampère, 69680 Chassieu, Lyon
-            </p>
-            <p>
-              <strong>Email :</strong>{" "}
-              <a href="mailto:contact@cimra.fr">contact@cimra.fr</a>
-            </p>
-            <p>
-              <strong>Téléphone :</strong>{" "}
-              <a href="tel:+33427469940">+33 (0)4 27 46 99 40</a>
-            </p>
-            <p>
-              <strong>Horaires :</strong> Lundi au vendredi, de 9h à 19h
-            </p>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">
+                <strong>Adresse : </strong>50 Rue Ampère, 69680 Chassieu, Lyon
+              </li>
+              <li className="list-group-item">
+                <strong>Email : </strong>
+                <a href="mailto:contact@cimra.fr">contact@cimra.fr</a>
+              </li>
+              <li className="list-group-item">
+                <strong>Téléphone : </strong>{" "}
+                <a href="tel:+33427469940">+33 (0)4 27 46 99 40</a>
+              </li>
+              <li className="list-group-item">
+                <strong>Horaires : </strong>Lundi au vendredi, de 9h à 19h
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    {/* Section Pourquoi Opter pour CIMRA ? */}
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
@@ -173,7 +170,6 @@ const Entreprise = () => (
       </div>
     </div>
 
-    {/* Section Suivez CIMRA */}
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card text-center">
