@@ -11,6 +11,7 @@ import MentionsLegales from "./pages/MentionsLegales";
 import Remerciements from "./pages/Remerciements";
 import Header from "./components/Header";
 import SiteMap from "./pages/SiteMap";
+import NotFound from "./pages/NotFound"; // Import du composant NotFound
 
 const App = () => (
   <Router>
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/remerciements" element={<Remerciements />} />
           <Route path="/sitemap" element={<SiteMap />} />
+          <Route path="*" element={<NotFound />} /> {/* Route 404 */}
         </Routes>
       </main>
     </div>
