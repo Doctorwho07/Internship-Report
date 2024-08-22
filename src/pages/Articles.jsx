@@ -1,5 +1,6 @@
 import React from "react";
 import articles from "../articlesTab.js";
+import "../styles/articles.css";
 
 const Articles = () => (
   <div className="container mt-5">

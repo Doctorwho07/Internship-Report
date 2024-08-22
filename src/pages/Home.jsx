@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/home.css";
 
 const Home = () => (
   <div className="container mt-5">

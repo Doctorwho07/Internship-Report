@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/bilan.css";
 
 const Bilan = () => (
   <div className="container mt-5">

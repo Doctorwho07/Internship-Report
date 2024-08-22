@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/sitemap.css";
 
 const PlanDuSite = () => (
   <div className="container mt-5">
