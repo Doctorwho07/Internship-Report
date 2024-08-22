@@ -36,3 +36,7 @@ to do :
 npm i
 npm install bootstrap-icons
 rpm run dev
+
+npm install react react-dom
+npm install @vitejs/plugin-react
+npm install react-router-dom
