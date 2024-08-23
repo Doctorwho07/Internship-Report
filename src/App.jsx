@@ -12,7 +12,7 @@ import Remerciements from "./pages/Remerciements";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SiteMap from "./pages/SiteMap";
-import NotFound from "./pages/NotFound"; // Import du composant NotFound
+import NotFound from "./pages/NotFound";
 
 const App = () => (
   <Router>
@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/remerciements" element={<Remerciements />} />
           <Route path="/sitemap" element={<SiteMap />} />
-          <Route path="*" element={<NotFound />} /> {/* Route 404 */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </div>

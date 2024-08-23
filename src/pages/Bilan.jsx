@@ -1,16 +1,17 @@
 import React from "react";
-import "../styles/bilan.css";
 
 const Bilan = () => (
-  <div className="container mt-5">
+  <div className="container mt-5" id="bilan">
     <h1 className="mb-4">Bilan</h1>
 
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">1. Introduction</h2>
+          </div>
           <div className="card-body">
-            <h2>1. Introduction</h2>
-            <p>
+            <p className="card-text">
               Découvrez le bilan de notre travail et nos réalisations au cours
               de cette période.
             </p>
@@ -22,8 +23,10 @@ const Bilan = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">2. Tableaux des Projets</h2>
+          </div>
           <div className="card-body">
-            <h2>2. Tableaux des Projets</h2>
             <div className="table-responsive">
               <table className="table">
                 <thead>
@@ -55,9 +58,11 @@ const Bilan = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">3. Conclusion</h2>
+          </div>
           <div className="card-body">
-            <h2>3. Conclusion</h2>
-            <p>
+            <p className="card-text">
               Ce bilan montre les avancées importantes réalisées durant cette
               période, avec une note particulière sur l'achèvement de projets
               clés et la progression des travaux en cours.

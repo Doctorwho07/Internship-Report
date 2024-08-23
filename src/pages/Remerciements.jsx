@@ -1,9 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/remerciements.css";
 
 const Remerciements = () => (
-  <div className="container mt-5">
+  <div className="container mt-5" id="remerciements">
     <h1 className="mb-4">Remerciements</h1>
     <p className="lead">
       Je souhaite remercier toutes les personnes qui ont contribué au bon
@@ -93,9 +92,7 @@ const Remerciements = () => (
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
-            <h2 className="card-title mb-0">
-              Équipe Relation École et Entreprise
-            </h2>
+            <h2 className="card-title mb-0">Équipe Relation École et Entreprise</h2>
           </div>
           <div className="card-body">
             <p className="card-text">

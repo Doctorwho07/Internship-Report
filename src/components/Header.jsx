@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../styles/navbar.css";
+import "../styles/header.css";
 
 const Header = () => {
   const location = useLocation();
@@ -122,13 +122,6 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <div className="ml-auto theme-switch-wrapper">
-              <label className="theme-switch" htmlFor="theme-toggle">
-                <input type="checkbox" id="theme-toggle" />
-                <span className="slider"></span>
-              </label>
-              <span id="theme-label">Clair</span>
-            </div>
           </div>
         </div>
       </nav>

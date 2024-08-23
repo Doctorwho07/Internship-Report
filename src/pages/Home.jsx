@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => (
   <div className="container mt-5">
@@ -18,9 +18,9 @@ const Home = () => (
         Je suis Alexis ROUCHES, étudiant en Cybersécurité à Lyon Ynov Campus.
         Explorez mon parcours et mes réalisations.
       </p>
-      <a href="#about" className="btn btn-primary btn-lg mt-4">
-        En savoir plus
-      </a>
+      <Link to="/about" className="btn btn-primary btn-lg mt-4">
+        Découvrir
+      </Link>
     </div>
     <div className="row justify-content-center">
       <div className="col-md-8">
@@ -38,18 +38,6 @@ const Home = () => (
             en savoir plus sur mon parcours et mes réalisations.
           </p>
         </div>
-      </div>
-    </div>
-    <div className="row justify-content-center mt-5">
-      <div className="col-md-8 text-center">
-        <h3 className="h4 mb-3">Restons en contact</h3>
-        <p className="mb-4">
-          Vous avez des questions ou souhaitez collaborer ? N'hésitez pas à me
-          contacter.
-        </p>
-        <a href="#contact" className="btn btn-secondary btn-lg">
-          Contactez-moi
-        </a>
       </div>
     </div>
   </div>

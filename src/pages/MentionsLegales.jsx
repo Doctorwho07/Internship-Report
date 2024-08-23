@@ -1,15 +1,16 @@
 import React from "react";
-import "../styles/mentions.css";
 
 const MentionsLegales = () => (
-  <div className="container mt-5">
+  <div className="container mt-5" id="mentions-legales">
     <h1 className="mb-4">Mentions légales</h1>
 
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">1. Présentation du site</h2>
+          </div>
           <div className="card-body">
-            <h2>1. Présentation du site</h2>
             <p>Le présent site est édité par Alexis ROUCHES.</p>
             <p>Siège social : Lyon.</p>
             <p>
@@ -27,8 +28,10 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">2. Hébergement du site</h2>
+          </div>
           <div className="card-body">
-            <h2>2. Hébergement du site</h2>
             <p>Le site est hébergé par Vercel.</p>
           </div>
         </div>
@@ -38,8 +41,10 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">3. Propriété intellectuelle</h2>
+          </div>
           <div className="card-body">
-            <h2>3. Propriété intellectuelle</h2>
             <p>
               Le site, sa structure générale ainsi que les textes, images,
               savoir-faire, dessins, graphismes, et tout autre élément composant
@@ -56,8 +61,10 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">4. Conditions d'utilisation</h2>
+          </div>
           <div className="card-body">
-            <h2>4. Conditions d'utilisation</h2>
             <p>
               En accédant à ce site, vous acceptez pleinement et entièrement les
               conditions générales d'utilisation précisées dans cette section.
@@ -104,8 +111,12 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">
+              5. Protection des données personnelles
+            </h2>
+          </div>
           <div className="card-body">
-            <h2>5. Protection des données personnelles</h2>
             <p>Aucune information collectée sur ce site.</p>
           </div>
         </div>
@@ -115,8 +126,10 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">6. Cookies</h2>
+          </div>
           <div className="card-body">
-            <h2>6. Cookies</h2>
             <p>
               Ce site utilise des cookies pour améliorer votre expérience
               utilisateur. En naviguant sur ce site, vous acceptez l'utilisation
@@ -132,8 +145,10 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">7. Responsabilité</h2>
+          </div>
           <div className="card-body">
-            <h2>7. Responsabilité</h2>
             <p>
               Les informations communiquées sur ce site sont fournies à titre
               indicatif, elles ne sont pas exhaustives et ne peuvent engager la
@@ -149,8 +164,10 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">8. Droit applicable</h2>
+          </div>
           <div className="card-body">
-            <h2>8. Droit applicable</h2>
             <p>
               Le présent site et ses mentions légales sont soumis au droit
               français. En cas de litige, les tribunaux de Lyon seront seuls
@@ -164,8 +181,10 @@ const MentionsLegales = () => (
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">9. Modification des mentions légales</h2>
+          </div>
           <div className="card-body">
-            <h2>9. Modification des mentions légales</h2>
             <p>
               Alexis ROUCHES se réserve le droit de modifier les présentes
               mentions à tout moment. L'utilisateur s'engage donc à les

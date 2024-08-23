@@ -1,9 +1,8 @@
 import React from "react";
 import articles from "../articlesTab.js";
-import "../styles/articles.css";
 
 const Articles = () => (
-  <div className="container mt-5">
+  <div className="container mt-5" id="articles">
     <h1 className="mb-4">Articles</h1>
     <div className="row">
       {articles.map((article, index) => (

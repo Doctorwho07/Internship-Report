@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/entreprise.css";
+
 const Entreprise = () => (
-  <div className="container mt-5">
+  <div className="container mt-5" id="entreprise">
     <h1 className="mb-4">L'Entreprise CIMRA</h1>
     <p className="lead">
       Découvrez comment CIMRA peut transformer vos défis informatiques en
@@ -174,7 +174,7 @@ const Entreprise = () => (
       <div className="col-md-12">
         <div className="card text-center">
           <div className="card-body">
-            <h2 className="card-title">Suivez CIMRA</h2>
+            <h2 className="card-title mb-0">Suivez CIMRA</h2>
             <p>
               Pour rester informé des dernières nouveautés et services de CIMRA,
               retrouvez l’entreprise sur{" "}
