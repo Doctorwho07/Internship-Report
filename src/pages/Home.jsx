@@ -8,7 +8,7 @@ const Home = () => (
     <div
       className="jumbotron text-center bg-light p-5 mb-5"
       style={{
-        backgroundImage: "url('/images/background.jpg')",
+        backgroundImage: "url('/logo/logo.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "400px",
