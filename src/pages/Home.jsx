@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => (
   <div className="container mt-5">
-    <img src="../../public/logo/logo.png" alt="logo" className="image" />
+    <img src="/logo/logo.png" alt="logo" className="image" />
 
     <div
       className="jumbotron text-center bg-light p-5 mb-5"
