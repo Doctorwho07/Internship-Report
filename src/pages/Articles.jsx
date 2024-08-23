@@ -9,7 +9,7 @@ const Articles = () => (
         <div key={index} className="col-md-4 mb-4">
           <div className="card">
             <img
-              src={`/path/to/images/${article.photo}`}
+              src={`${article.photo}`}
               alt={article.title}
               className="card-img-top"
             />
@@ -29,7 +29,7 @@ const Articles = () => (
                   <h6>{item.subtitle}</h6>
                   <p>{item.details}</p>
                   <img
-                    src={`/path/to/images/${item.photo}`}
+                    src={`${item.photo}`}
                     alt={item.subtitle}
                     className="img-fluid"
                   />

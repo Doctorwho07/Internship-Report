@@ -3,7 +3,7 @@ const articles = [
     title: "Interventions Clients et Résolutions de Problèmes",
     description:
       "Cette section couvre les différentes interventions sur site et à distance pour résoudre des problèmes clients, incluant la configuration réseau, la réparation matérielle et les dépannages.",
-    photo: "interventions_clients.jpg",
+    photo: "/customer/PC-asso lyon.jpg",
     dateCreated: "2024-03-15",
     theme: "Support Technique",
     content: [
@@ -11,49 +11,49 @@ const articles = [
         subtitle: "Intervention client Volkswagen",
         details:
           "Résolution d'un problème de connectivité Wi-Fi dans les locaux de Volkswagen. Mise à jour du firewall pour améliorer la sécurité du réseau, en s'assurant que toutes les règles de sécurité étaient correctement configurées.",
-        photo: "volkswagen_wifi.jpg",
+        photo: "/customer/VW/VW-Baie.jpg",
       },
       {
         subtitle: "Intervention Dépannage COCHET",
         details:
           "Ajout de plusieurs PC dans le domaine de l'entreprise COCHET, création de sessions utilisateurs personnalisées, et vérification des accès aux ressources réseau partagées.",
-        photo: "cochet_setup.jpg",
+        photo: "/customer/cochet/ActiveDirectory.png",
       },
       {
         subtitle: "Intervention Miroiterie",
         details:
           "Installation complète d'un nouveau poste de travail, incluant PC, écran, clavier, souris, et mise en place des connexions réseau. Formation rapide de l'utilisateur sur les fonctionnalités essentielles.",
-        photo: "miroiterie_installation.jpg",
+        photo: "/customer/miroiterie/config-fixe.png",
       },
       {
         subtitle: "Intervention Dépannage Villeurbanne",
         details:
           "Démontage d'un PC pour ajout de RAM afin d'améliorer les performances d'une station de travail utilisée pour des tâches intensives. Nettoyage interne du PC pour prévenir les problèmes de surchauffe.",
-        photo: "villeurbanne_ram.jpg",
+        photo: "/customer/cochet/ram-all-in-one.png",
       },
       {
         subtitle: "Support technique à distance",
         details:
           "Diagnostic et résolution de pannes via accès à distance. Utilisation d'un switch pour tester la stabilité d'une configuration réseau avec ipfire3. Vérification des journaux système pour identifier la cause des erreurs.",
-        photo: "support_technique.jpg",
+        photo: "/work/switch-24ports+4.jpg",
       },
       {
         subtitle: "Intervention chez Cochet",
         details:
           "Ajout des derniers utilisateurs dans le domaine, configuration des permissions spécifiques et tests d'accès. Ajustement des politiques de groupe pour aligner les configurations avec les exigences de sécurité de l'entreprise.",
-        photo: "cochet_users.jpg",
+        photo: "/customer/cochet/group-ad.png",
       },
       {
         subtitle: "Intervention pour erreur d’imprimante",
         details:
           "Diagnostic et résolution d'une erreur d'imprimante réseau, incluant la réinstallation des drivers et la configuration des paramètres d'impression via Group Policy.",
-        photo: "imprimante_erreur.jpg",
+        photo: "/customer/cochet/imprimante.png",
       },
       {
         subtitle: "Récupération d'anciens PC",
         details:
           "Intervention pour récupérer un lot d'anciens PC destinés à la donation. Vérification de l'état des composants, effacement sécurisé des données et préparation pour leur réutilisation.",
-        photo: "recyclage_pc.jpg",
+        photo: "/customer/PC-asso.jpg",
       },
     ],
   },
@@ -69,7 +69,7 @@ const articles = [
         subtitle: "Mise en place de mon PC",
         details:
           "Installation et configuration d'un poste de travail complet incluant un PC, un écran, un clavier, une souris, et les logiciels nécessaires. Réglage des paramètres pour optimiser l'efficacité au travail.",
-        photo: "setup_pc.jpg",
+        photo: "/work/Setup-travail.jpg",
       },
       {
         subtitle: "Initialisation des PC client",
@@ -81,37 +81,37 @@ const articles = [
         subtitle: "Test des disques durs serveurs",
         details:
           "Test approfondi des disques durs destinés aux serveurs pour vérifier leur intégrité et leur performance. Récupération des composants intéressants pour une réutilisation future.",
-        photo: "test_disques.jpg",
+        photo: "/work/hd-tune/test.png",
       },
       {
         subtitle: "Assemblage de deux PC",
         details:
           "Assemblage de deux PC, l'un destiné à être un serveur et l'autre un client, incluant l'installation des composants internes et la configuration du BIOS pour optimiser les performances.",
-        photo: "assemblage_pc.jpg",
+        photo: "/customer/Archi/PC-Fixe-archi.jpg",
       },
       {
         subtitle: "Installation de PC sur KVM",
         details:
           "Installation de trois PC sur un commutateur KVM, avec trois écrans, un clavier et une souris partagés. Configuration pour permettre un basculement facile entre les machines.",
-        photo: "installation_kvm.jpg",
+        photo: "/work/kvm.png",
       },
       {
         subtitle: "Montage d’une baie serveur",
         details:
           "Montage complet d'une baie serveur, incluant l'installation des serveurs, du matériel réseau, et la gestion des câbles. Configuration initiale des serveurs pour préparer leur déploiement en production.",
-        photo: "montage_baie.jpg",
+        photo: "/customer/Baie-serveur.jpg",
       },
       {
         subtitle: "Installation de logiciels sur PC portable",
         details:
           "Installation et activation de la suite Office sur un PC portable, ainsi que l'ajout de licences pour d'autres logiciels nécessaires au client.",
-        photo: "installation_office.jpg",
+        photo: "/work/office-licence.png",
       },
       {
         subtitle: "Préparation de mini PC",
         details:
           "Préparation de deux mini PC avec l'ajout de RAM supplémentaire pour répondre aux besoins spécifiques des utilisateurs. Configuration de Windows et installation des drivers.",
-        photo: "preparation_mini_pc.jpg",
+        photo: "/customer/rajout-ram.jpg",
       },
     ],
   },
@@ -119,7 +119,7 @@ const articles = [
     title: "Sauvegarde et Restauration de Données",
     description:
       "Cet article décrit les activités centrées sur les processus de sauvegarde, restauration de données, et la création d'environnements de récupération.",
-    photo: "sauvegarde_restoration.jpg",
+    photo: "/work/arcserve-spx.png",
     dateCreated: "2024-03-15",
     theme: "Sauvegarde et Récupération",
     content: [
@@ -127,37 +127,37 @@ const articles = [
         subtitle: "Création de comptes et VPN",
         details:
           "Création d’un compte utilisateur pour le responsable de stage et configuration d'un VPN pour permettre un accès sécurisé à distance aux systèmes de l'entreprise.",
-        photo: "creation_vpn.jpg",
+        photo: "/work/openvpn-pfsense.png",
       },
       {
         subtitle: "Clés bootables pour serveurs",
         details:
           "Création de clés USB bootables pour l'installation de Windows Server et Windows 10. Tests des installations sur des machines virtuelles pour garantir la stabilité.",
-        photo: "cles_bootables.jpg",
+        photo: "/work/cle-usb.png",
       },
       {
         subtitle: "Installation ArcServe SPX",
         details:
           "Installation et configuration du logiciel ArcServe Shadow Protect SPX et d'Image Manager pour gérer les sauvegardes des systèmes critiques de l'entreprise.",
-        photo: "installation_arcserve.jpg",
+        photo: "/work/arcserve-installation.png",
       },
       {
         subtitle: "Création de sauvegardes",
         details:
           "Mise en place d'une sauvegarde incrémentielle continue avec ArcServe, incluant la configuration d'un head start recovery (HSR) pour une récupération rapide en cas de sinistre.",
-        photo: "sauvegarde_incre.jpg",
+        photo: "/work/backup-job.png",
       },
       {
         subtitle: "Lancement des HSR et VM",
         details:
           "Lancement des processus de head start recovery (HSR) et création de machines virtuelles (VM) pour tester la récupération des systèmes. Vérification de l'intégrité des données récupérées.",
-        photo: "lancement_hsr.jpg",
+        photo: "/work/hsr-vm.png",
       },
       {
         subtitle: "Tests de récupération",
         details:
           "Tests approfondis de récupération de sauvegardes, débogage des machines virtuelles en cas de problème, et contact avec le support ArcServe pour résoudre les anomalies.",
-        photo: "tests_recuperation.jpg",
+        photo: "/work/scre.png",
       },
       {
         subtitle: "Documentation technique",
