@@ -1,65 +1,85 @@
 /* Navbar Styling */
 .navbar {
-  border-bottom: 1px solid #e0e0e0; /* Bordure légère pour délimiter la navbar */
-  padding: 0.5rem 1rem; /* Espacement général */
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5rem 1rem;
 }
 
 /* Navbar Brand */
 .navbar-brand {
-  font-weight: 600; /* Font-weight légèrement plus épais */
-  font-size: 1.5rem; /* Taille du texte du brand */
-  color: #333; /* Couleur du texte du brand */
-  text-decoration: none; /* Enlever le soulignement */
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navbar Toggler (Burger Icon) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 3px;
 }
 
 /* Navbar Links */
 .navbar-nav {
-  margin-left: auto; /* Aligner à droite */
+  margin-left: auto;
 }
 
-/* Nav Items */
 .nav-item {
-  margin: 0 10px; /* Espacement entre les éléments */
+  margin: 0 10px;
 }
 
-/* Button Link Styling */
 .button-link {
   display: inline-block;
-  padding: 10px 15px; /* Padding pour les boutons */
-  border-radius: 4px; /* Coins arrondis pour les boutons */
+  padding: 10px 15px;
+  border-radius: 4px;
   font-weight: 500;
   text-decoration: none;
-  color: #333; /* Couleur du texte initiale */
-  background-color: #fff; /* Fond blanc */
-  border: 2px solid transparent; /* Bordure transparente initiale */
-  transition: all 0.3s ease; /* Animation fluide */
+  color: #333;
+  background-color: #fff;
+  border: 2px solid transparent;
+  transition: all 0.6s ease;
 }
 
-/* Hover Effect */
 .button-link:hover,
 .button-link:focus {
-  color: #fff; /* Couleur du texte au survol */
-  background-color: #007bff; /* Fond bleu au survol */
-  border-color: #007bff; /* Bordure bleue au survol */
-}
-
-/* Spécificité des Couleurs au Survol */
-#aboutLink:hover,
-#entrepriseLink:hover,
-#articlesLink:hover,
-#contactLink:hover,
-#bilanLink:hover,
-#sitemapLink:hover,
-#mentionsLink:hover,
-#remerciementsLink:hover {
-  background-color: #00f2ffa7; /* Couleur de fond au survol */
-  border-color: #007bff; /* Couleur de bordure au survol */
-  color: #fff; /* Couleur du texte au survol */
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: 0.6s;
 }
 
 .button-link.active-link {
-  color: #fff; /* Couleur du texte de l'élément actif */
-  background-color: #007bff; /* Fond bleu pour l'élément actif */
-  border-color: #007bff; /* Bordure bleue pour l'élément actif */
-  font-weight: bold; /* Texte en gras pour l'élément actif */
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+/* Navbar Collapse on Mobile */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+    border-top: 2px solid #007bff;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .theme-switch-wrapper {
+    margin-top: 10px;
+  }
 }

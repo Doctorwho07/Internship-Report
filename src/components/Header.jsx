@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/navbar.css";
+
 const Header = () => {
   const location = useLocation();
   const currentPath = location.pathname;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header>
@@ -12,7 +18,20 @@ const Header = () => {
           <Link to="/" className="navbar-brand">
             Accueil
           </Link>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={toggleMenu}
+            aria-controls="navbarNav"
+            aria-expanded={isMenuOpen}
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+            id="navbarNav"
+          >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <Link
@@ -20,6 +39,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/about" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   À propos
                 </Link>
@@ -30,6 +50,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/entreprise" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Entreprise
                 </Link>
@@ -40,6 +61,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/articles" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Articles
                 </Link>
@@ -50,6 +72,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/contact" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
                 </Link>
@@ -60,6 +83,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/bilan" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Bilan
                 </Link>
@@ -70,6 +94,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/SiteMap" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Plan du site
                 </Link>
@@ -80,6 +105,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/mentions-legales" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Mentions légales
                 </Link>
@@ -90,6 +116,7 @@ const Header = () => {
                   className={`nav-link button-link ${
                     currentPath === "/remerciements" ? "active-link" : ""
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Remerciements
                 </Link>

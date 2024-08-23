@@ -10,6 +10,7 @@ import Bilan from "./pages/Bilan";
 import MentionsLegales from "./pages/MentionsLegales";
 import Remerciements from "./pages/Remerciements";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import SiteMap from "./pages/SiteMap";
 import NotFound from "./pages/NotFound"; // Import du composant NotFound
 
@@ -32,6 +33,7 @@ const App = () => (
         </Routes>
       </main>
     </div>
+    <Footer />
   </Router>
 );
 

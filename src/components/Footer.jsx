@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/footer.css";
 
 const Footer = () => (
   <footer>
     <p>
-      &copy; 2024 Mon Rapport de Stage. Tous droits réservés. Réaliser par
-      Alexis ROUCHES avec Passion
+      &copy; 2024 Rapport de Stage réaliser par Alexis ROUCHES. Tous droits
+      réservés
     </p>
   </footer>
 );
