@@ -1,41 +1,49 @@
-# 📄 Rapport de Stage chez Cimra
+# Blog Professionnel
 
-## 📝 Introduction
+Bienvenue sur mon blog professionnel où je partage mes expériences, les projets réalisés, les problèmes rencontrés et les solutions apportées. Ce blog est un espace pour documenter mon parcours en tant qu'étudiant en troisième année de Bachelor à Lyon Ynov Campus, avec un focus sur l'infrastructure réseau, la cybersécurité, le support technique et la maintenance matériel.
 
-Ce rapport de stage présente une synthèse de mon expérience au sein de **Cimra**, où j'ai effectué un stage en **administration réseau et cybersécurité** 🔒. Ce stage s'est déroulé du **1er juillet au 9 août** et m'a permis d'approfondir mes connaissances tout en participant activement aux projets de l'entreprise.
+## Technologies Utilisées
 
-## 🏢 Présentation de l'entreprise
+- **React** : Une bibliothèque JavaScript pour construire des interfaces utilisateur.
+- **Vite** : Un outil de construction rapide pour les projets React.
+- **Bootstrap** : Un framework CSS pour un design moderne et réactif.
+- **Vercel** : Service d'hébergement pour déploiement automatique.
 
-**Cimra** est une société spécialisée dans **les services informatiques adaptés aux besoins des professionnels**, et reconnue pour **son expertise en maintenance informatique, sauvegardes et restauration en cas d'incident, hébergement et administration**.
+## Structure du Blog
 
-## 💼 Missions et activités réalisées
+Le blog est organisé en plusieurs sections, chacune correspondant à un thème spécifique :
 
-Durant mon stage, j'ai été impliqué dans diverses missions, telles que :
+### 1. **Infrastructure Réseau**
 
-- **[Mission principale 1]** : [détails, par exemple "la conception et le développement d'une application web" 🌐].
-- **[Mission principale 2]** : [détails, par exemple "l'amélioration de la sécurité des systèmes d'information" 🔐].
-- **[Mission principale 3]** : [détails, par exemple "gestion de projet" 📊, "analyse des risques" ⚠️].
+### 2. **Cybersécurité**
 
-Ces activités m'ont permis de développer des compétences en :
+### 3. **Support Technique**
 
-- **[Compétence 1]** : [par exemple "programmation en JavaScript" 🖥️].
-- **[Compétence 2]** : [par exemple "gestion de projet" 📊].
-- **[Compétence 3]** : [par exemple "analyse des risques" ⚠️].
+### 4. **Maintenance Matériel**
 
-## 🔚 Conclusion
+## Guide d'Utilisation
 
-Cette expérience a été très enrichissante et m'a permis de :
+1. **Installation et Développement**
 
-- **[Résumer les acquis]** : [par exemple "consolider mes compétences techniques" 🛠️, "mieux comprendre le fonctionnement d'une entreprise" 🏢].
+   - Clonez ce dépôt : `git clone <URL du dépôt>`
+   - Installez les dépendances : `npm install`
+   - Lancez le serveur de développement : `npm run dev`
 
-Ce stage a également confirmé mon intérêt pour **[secteur/domaine]** 🌟, et je suis convaincu que les compétences acquises me seront précieuses pour la suite de mon parcours professionnel 🚀.
+2. **Hébergement**
 
-to do :
-npm i
-npm install bootstrap-icons
-rpm run dev
+   - Le blog est hébergé sur Vercel. Pour les déploiements, il vous suffit de pousser les modifications sur la branche principale de GitHub pour déclencher un déploiement automatique.
 
-npm install react react-dom
-npm install @vitejs/plugin-react
-npm install react-router-dom
-npm install react-responsive-carousel
+3. **Contribuer**
+   - Pour contribuer à ce projet, créez une branche pour vos modifications, soumettez un pull request et assurez-vous de tester vos changements localement.
+
+## Contact
+
+Pour toute question ou commentaire, vous pouvez me joindre via les informations suivantes :
+
+- **Email** : [alexis.rouches@icloud.com](mailto:alexis.rouches@icloud.com)
+- **Téléphone** : [0778221121](tel:0778221121)
+- **Portefeuille numérique** : [Alexis-R](https://alexis-r.link)
+
+---
+
+Merci de visiter mon blog ! N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.

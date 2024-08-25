@@ -44,6 +44,15 @@ const Detail = () => {
                     <p>
                       <strong>Connaissances :</strong> {post.connaissances}
                     </p>
+                    <img
+                      src={post.image}
+                      alt="image"
+                      style={{
+                        width: "55vw",
+                        height: "auto",
+                        maxWidth: "100%",
+                      }}
+                    />
                   </li>
                 ))}
               </ul>

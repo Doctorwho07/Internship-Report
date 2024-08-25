@@ -13,6 +13,11 @@ const Home = () => (
       <Link to="/about" className="btn btn-lg mt-4">
         Découvrir
       </Link>
+      <div className="mt-4">
+        <a href="/2024-07-03-Alexis-journal.docx" download className="btn">
+          Télécharger mon rapport de stage
+        </a>
+      </div>
     </div>
   </div>
 );

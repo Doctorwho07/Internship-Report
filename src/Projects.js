@@ -15,6 +15,7 @@ const projects = [
           "J'ai découvert les KVM, un dispositif permettant d'utiliser plusieurs ordinateurs avec un seul clavier, moniteur et souris. Pour améliorer ma productivité, j'ai tout de même conservé 3 écrans distincts.",
         connaissances:
           "J'ai appris à utiliser cet outil, le contrôler par le clavier et comprendre les différents canaux.",
+        image: "/work/kvm.png",
       },
       {
         projet: "Mise en place du serveur pour ArcServe",
@@ -27,6 +28,7 @@ const projects = [
           "Pour effectuer les restaurations, j'ai configuré un serveur et y ai installé les outils ArcServe nécessaires : Image Manager, ArcServe ShadowProtect, etc.",
         connaissances:
           "J'ai appris à installer et configurer un serveur, mettre en place les outils et analyser les logs d'installation.",
+        image: "/work/arcserve-installation.png",
       },
       {
         projet: "Création de clés bootables Win 10 / 11 / srv 2022",
@@ -38,6 +40,7 @@ const projects = [
           "J'ai donc configuré des clés bootables et installé les OS nécessaires pour chaque machine.",
         connaissances:
           "J'ai appris à configurer une clé pour la rendre bootable et à installer Windows Server.",
+        image: "/work/cle-usb.png",
       },
       {
         projet:
@@ -51,6 +54,7 @@ const projects = [
           "Nous avons configuré et installé l'ordinateur, l'onduleur et les périphériques. Les ports Ethernet n'étaient pas reliés, avec l'accord du responsable, nous avons récupéré la connexion d'un autre poste pour la transférer vers ce nouveau poste.",
         connaissances:
           "J'ai appris l'importance d'un onduleur et son rôle, ainsi que comment reconnaître un port Ethernet jusqu'à sa terminaison dans la baie.",
+        image: "/customer/Baie-serveur.jpg",
       },
       {
         projet: "Remplacement d'un switch",
@@ -62,13 +66,14 @@ const projects = [
           "Nous avons changé le switch pour un modèle plus grand et rebranché toutes les connexions.",
         connaissances:
           "J'ai compris l'importance d'anticiper les besoins futurs pour éviter au maximum les changements.",
+        image: "/work/switch-24ports+4.jpg",
       },
     ],
   },
   {
     id: 1,
     theme: "Cybersécurité",
-    image: "",
+    image: "/work/openvpn-pfsense.png",
     posts: [
       {
         projet: "Création d'un VPN avec certificat pour accès à distance",
@@ -81,26 +86,27 @@ const projects = [
           "Pour cela, nous avons mis en place un VPN et une règle de firewall pour me permettre d'y accéder.",
         connaissances:
           "J'ai appris à configurer un VPN, à créer un utilisateur et à lui attribuer des autorisations sur pfSense.",
+        image: "/work/openvpn-pfsense.png",
       },
       {
-        projet:
-          "Cours de cybersécurité et changement de mot de passe par invite de commande",
+        projet: "Cours de cybersécurité et certification ArcServe",
         date: "26/07/2024",
         statut: "Terminé",
         logiciels: "Windows",
         problemes:
-          "Je souhaite m'orienter en cybersécurité, mais mes connaissances sont faibles.",
+          "Je souhaite m'orienter en cybersécurité, mais mes connaissances sont faibles. Pour réussir a faire mes restauration en cas d'incident je devais connaitre le logiciel",
         solutions:
-          "Mon responsable de stage, Antoine, est également professeur en cybersécurité. Il m'a permis de comprendre les enjeux, les vulnérabilités, et m'a donné une nouvelle vision des choses.",
+          "Mon responsable de stage, Antoine, est également professeur en cybersécurité. Il m'a permis de comprendre les enjeux, les vulnérabilités, et m'a donné une nouvelle vision des choses. Pour la restauration j'ai decide de passer la certification que j'ai raté a 1% près",
         connaissances:
           "J'ai appris à changer le mot de passe de session d'un utilisateur sans avoir accès à sa session, j'ai appris à faire du phishing et à retrouver des mots de passe à partir de données personnelles.",
+        image: "/work/backup-job.png",
       },
     ],
   },
   {
     id: 2,
     theme: "Support Technique",
-    image: "",
+    image: "/work/Atelier.jpg",
     posts: [
       {
         projet: "Intervention client",
@@ -113,6 +119,7 @@ const projects = [
           "La fibre étant arrivée, le technicien Orange devait simplement l'installer et remettre les câbles. Pendant ce temps, les nouveaux équipements étaient prêts à être installés et l'intervention consistait à mettre en place le firewall. L'équipement étant défaillant, un technicien devait repasser pour le vérifier et si besoin en commander un nouveau. Notre intervention s'est soldée par une mise à jour des équipements déjà présents.",
         connaissances:
           "J'ai appris la posture professionnelle à adopter lors d'une intervention, l'importance de connaître toutes les interventions précédentes et de communiquer avec le responsable de ce qui est mis en œuvre pour son entreprise.",
+        image: "/customer/PC-asso lyon.jpg",
       },
       {
         projet: "Diagnostic de pannes à distance",
@@ -125,6 +132,7 @@ const projects = [
           "Pour résoudre des problèmes à distance, CIMRA utilise deux logiciels : Atera et Helper.exe. Cela permet de prendre le contrôle à distance, de manière sécurisée et consentie. Pour le débit internet, un petit test de rapidité et une analyse du flux réseau ont démontré un flux normal, mais une consommation trop élevée sur l'ordinateur de l'employé. Les problèmes d'impression ont été résolus par un redémarrage de l'imprimante. Les mots de passe ont pu être réinitialisés depuis l'AD et les comptes utilisateurs créés ou supprimés en fonction du besoin.",
         connaissances:
           "J'ai appris que la plupart des problèmes sont communs et très souvent faciles à résoudre. Il faut simplement garder en tête que nos clients ne sont pas informaticiens et que chacun a son corps de métier. J'ai appris à créer, supprimer, modifier des utilisateurs et des groupes depuis l'AD.",
+        image: "/work/helper.png",
       },
       {
         projet: "Analyse des logs suite à des pertes de connexion",
@@ -137,6 +145,7 @@ const projects = [
           "Nous avons analysé les logs du serveur et des équipements réseaux. Finalement, il s'est avéré qu'il s'agissait d'une mise à jour du serveur et du firewall.",
         connaissances:
           "J'ai appris à diagnostiquer des pertes de connexion avec des outils comme SSMS.",
+        image: "/work/Setup-travail.jpg",
       },
       {
         projet: "Déballage de commandes et ajout de RAM",
@@ -149,13 +158,14 @@ const projects = [
           "Pour répondre aux besoins des clients, j'ai dû démonter des ordinateurs et rajouter des barrettes de RAM en faisant particulièrement attention à la version, à la vitesse et en ajoutant le dissipateur thermique.",
         connaissances:
           "J'ai appris à démonter des mini-PC, des PC all-in-one et à identifier des barrettes de RAM.",
+        image: "/customer/reception.jpg",
       },
     ],
   },
   {
     id: 3,
     theme: "Maintenance Matériel",
-    image: "",
+    image: "/customer/PC-fixe-composants.jpg",
     posts: [
       {
         projet: "Test des disques durs serveurs S.M.A.R.T",
@@ -168,6 +178,7 @@ const projects = [
           "J'ai utilisé CrystalDisk et le Data Center de Dell pour évaluer la santé des disques durs.",
         connaissances:
           "J'ai appris à utiliser ces outils et à identifier les indicateurs de santé S.M.A.R.T pour déterminer si un disque est en bon état ou doit être remplacé.",
+        image: "/work/hd-tune/test.png",
       },
       {
         projet: "Remplacement de composants défectueux",
@@ -180,6 +191,7 @@ const projects = [
           "Après diagnostic, j'ai remplacé les composants défectueux (RAM et alimentation) et effectué un test pour vérifier la stabilité du système.",
         connaissances:
           "J'ai appris à diagnostiquer des problèmes matériels et à effectuer un remplacement de composants critiques dans un environnement serveur.",
+        image: "/customer/PC-fixe-composants.jpg",
       },
     ],
   },
