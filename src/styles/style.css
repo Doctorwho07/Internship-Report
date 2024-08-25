@@ -28,7 +28,7 @@ a {
 
 .card {
   margin-top: 2rem;
-  border: 1px solid rgb(80, 112, 117);
+  border: 1px solid #507075;
   background-color: #f8f9fa;
 }
 
@@ -67,4 +67,15 @@ th:hover {
 .status,
 .date {
   text-align: center;
+}
+.carousel .control-dots {
+  position: relative !important;
+}
+.carousel {
+  display: flex !important;
+  flex-direction: column-reverse;
+  height: 60vh;
+}
+.slide {
+  height: 100% !important;
 }

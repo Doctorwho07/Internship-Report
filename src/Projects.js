@@ -1,7 +1,6 @@
 const projects = [
   {
     theme: "Infrastructure Réseau",
-    title: "Infrastructure Réseau",
     image: "",
     posts: [
       {
@@ -32,7 +31,6 @@ const projects = [
   },
   {
     theme: "Cybersécurité",
-    title: "Cybersécurité",
     image: "",
     posts: [
       {
@@ -58,7 +56,6 @@ const projects = [
   },
   {
     theme: "Support Technique",
-    title: "Support Technique",
     image: "",
     posts: [
       {
@@ -95,7 +92,6 @@ const projects = [
   },
   {
     theme: "Maintenance Matériel",
-    title: "Maintenance Matériel",
     image: "",
     posts: [
       {
@@ -133,7 +129,6 @@ const projects = [
   },
   {
     theme: "Documentation Technique",
-    title: "Documentation Technique",
     image: "",
     posts: [
       {
@@ -159,7 +154,6 @@ const projects = [
   },
   {
     theme: "Formation",
-    title: "Formation",
     image: "",
     posts: [
       {
