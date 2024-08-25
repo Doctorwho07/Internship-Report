@@ -27,6 +27,10 @@ const Contact = () => (
                 <strong>Téléphone :</strong>{" "}
                 <a href="tel:0778221121">0778221121</a>
               </p>
+              <p>
+                <strong>Portefeuille numérique :</strong>{" "}
+                <a href="https://alexis-r.link">Alexis-R</a>
+              </p>
             </div>
 
             <div className="alert alert-info" role="alert">
