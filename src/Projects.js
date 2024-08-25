@@ -202,7 +202,7 @@ const projects = [
     posts: [
       {
         projet: "Passage de la certification ArcServe",
-        date: "01/07/2024",
+        date: "01/07/2024 - Aujourd'hui",
         statut: "en cours",
         logiciels: "Windows, ArcServe",
         problemes:

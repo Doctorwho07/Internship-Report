@@ -281,9 +281,19 @@ const Bilan = () => {
                 utilisant des outils tels qu'Active Directory, PfSense, OpenVPN,
                 ainsi que des scripts PowerShell. Le déroulement de mes missions
                 a été très satisfaisant, et j'ai pu acquérir une compréhension
-                approfondie de chaque technologie que j'ai manipulée. Un grand
-                merci à toute l'équipe de CIMRA pour votre soutien et votre
-                expertise.
+                approfondie de chaque technologie que j'ai manipulée.
+              </p>
+              <p className="card-text">
+                Un grand merci à toute l'équipe de CIMRA pour votre soutien et
+                votre expertise. Mon stage était très bien organisé, j'ai
+                éprouvé beaucoup de plaisir a venir chaque jour et n'hésitais
+                pas à faire des heures supplémentaires volontaires. A la suite
+                de ce stage, l'entreprise m'a proposée de continuer sur une
+                alternance, cependant ayant déjà trouvé mon alternance pour
+                2024-2025 j'ai du refusé. Mais, ils me gardent une place pour
+                2025-2026. Je suis très reconnaissant pour cette opportunité et
+                de l'accompagnement qui m'a été donné. Je joingnerai la lettre
+                de recommandation du responsable quand je l'aurai reçue.
               </p>
             </div>
           </div>
