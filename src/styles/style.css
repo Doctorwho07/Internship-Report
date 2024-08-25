@@ -61,3 +61,6 @@ a {
   height: 70px;
   object-fit: cover;
 }
+th:hover {
+  cursor: pointer;
+}
