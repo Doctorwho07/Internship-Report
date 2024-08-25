@@ -1,5 +1,5 @@
 .navbar {
-  border-bottom: 1px solid rgb(80, 112, 117);
+  border-bottom: 1px solid var(--primary);
   padding: 0.5rem 1rem;
 }
 
@@ -44,15 +44,15 @@
 .button-link:hover,
 .button-link:focus {
   color: #fff;
-  background-color: rgb(80, 112, 117);
-  border-color: rgb(80, 112, 117);
+  background-color: var(--primary);
+  border-color: var(--primary);
   transition: 0.6s;
 }
 
 .button-link.active-link {
   color: #fff;
-  background-color: rgb(80, 112, 117);
-  border-color: rgb(80, 112, 117);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 @media (max-width: 992px) {
@@ -62,7 +62,7 @@
 
   .navbar-collapse.show {
     display: block;
-    border-top: 2px solid rgb(80, 112, 117);
+    border-top: 2px solid var(--primary);
   }
   .navbar-nav {
     flex-direction: column;

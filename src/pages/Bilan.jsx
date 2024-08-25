@@ -149,6 +149,120 @@ const Bilan = () => {
           </div>
         </div>
       </div>
+      <div className="row mb-5">
+        <div className="col-md-12">
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title mb-0">3. Compétences Acquises</h2>
+            </div>
+            <div className="card-body">
+              <p>
+                Pendant mon stage, j'ai acquis plusieurs compétences clés qui
+                ont contribué à mon développement professionnel dans le domaine
+                de l'informatique. Voici un aperçu des compétences que j'ai
+                développées :
+              </p>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">
+                  <strong>
+                    Diagnostic et résolution de problèmes techniques :
+                  </strong>{" "}
+                  Je suis capable de diagnostiquer et résoudre des problèmes
+                  techniques à distance, en utilisant des outils de gestion à
+                  distance comme TeamViewer et des procédures de dépannage pour
+                  des clients tels que Volkswagen et Cochet.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Configuration et mise en place de réseaux locaux :
+                  </strong>{" "}
+                  Je suis capable de configurer et mettre en place des réseaux
+                  locaux, en effectuant des installations matérielles et des
+                  configurations logicielles pour des systèmes tels que Windows
+                  Server, dans un cadre professionnel de support technique.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Installation et configuration de logiciels et systèmes :
+                  </strong>{" "}
+                  Je suis capable d'installer et de configurer des logiciels et
+                  des systèmes d'exploitation sur des serveurs et des postes de
+                  travail, y compris l'activation des licences et la
+                  configuration de sauvegardes avec ArcServe SPX, pour assurer
+                  une gestion efficace des données.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Préparation et passage de certifications techniques :
+                  </strong>{" "}
+                  Je suis capable de préparer et passer des certifications
+                  techniques, en suivant des cours spécialisés comme ArcServe et
+                  en réalisant des tests pour valider mes compétences, pour
+                  obtenir des qualifications professionnelles reconnues.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Création et configuration de machines virtuelles :
+                  </strong>{" "}
+                  Je suis capable de créer et de configurer des machines
+                  virtuelles en utilisant Hyper-V et d'autres outils de
+                  virtualisation, en initialisant des ISO, des VHDX, et en
+                  mettant en place des environnements de récupération, pour
+                  assurer la continuité des services en cas de sinistre.
+                </li>
+                <li className="list-group-item">
+                  <strong>Rédaction de documents techniques détaillés :</strong>{" "}
+                  Je suis capable de rédiger des documents techniques détaillés,
+                  en expliquant les procédures de reprise d'activité après
+                  sinistre et les configurations de machines virtuelles, pour
+                  garantir la clarté et la précision des processus techniques.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Diagnostics et réparations de matériel informatique :
+                  </strong>{" "}
+                  Je suis capable de réaliser des diagnostics et des réparations
+                  de matériel informatique, en effectuant des tests sur les
+                  disques durs, les composants, et en démontant des unités pour
+                  remplacer des pièces comme les CPUs et GPUs, pour optimiser la
+                  performance des systèmes.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Mise en œuvre de procédures de sécurité informatique :
+                  </strong>{" "}
+                  Je suis capable de mettre en œuvre des procédures de sécurité
+                  informatique, en configurant des VPNs, en réalisant des
+                  changements de mot de passe sécurisés et en analysant des logs
+                  pour détecter des problèmes de connexion à des bases de
+                  données, pour maintenir la sécurité des systèmes.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Communication avec équipes techniques et clients :
+                  </strong>{" "}
+                  Je suis capable de communiquer efficacement avec des équipes
+                  techniques et des clients, en participant à des appels de
+                  support technique, en rédigeant des rapports de problème, et
+                  en collaborant avec les responsables pour résoudre les
+                  incidents, pour assurer une résolution rapide et efficace des
+                  problèmes.
+                </li>
+                <li className="list-group-item">
+                  <strong>
+                    Gestion et optimisation des ressources informatiques :
+                  </strong>{" "}
+                  Je suis capable de gérer et d'optimiser les ressources
+                  informatiques, en récupérant et en réutilisant des composants
+                  pour assembler de nouveaux systèmes, pour répondre aux besoins
+                  variés des clients et maximiser l'utilisation des ressources
+                  disponibles.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="row mb-5">
         <div className="col-md-12">

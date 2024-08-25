@@ -16,7 +16,10 @@ const Remerciements = () => (
             <h2 className="card-title mb-0">Responsables</h2>
           </div>
           <div className="card-body">
-            <p className="card-text">Merci aux responsables :</p>
+            <p className="card-text">
+              Merci aux responsables qui ont su être à l'écoute et m'apporter
+              les ressources nécessaires
+            </p>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
                 <a
@@ -51,7 +54,10 @@ const Remerciements = () => (
             <h2 className="card-title mb-0">Alternants</h2>
           </div>
           <div className="card-body">
-            <p className="card-text">Merci aux alternants :</p>
+            <p className="card-text">
+              Merci aux alternants qui m'ont apportés leurs soutiens et leurs
+              conseils dans les domaines nouveaux
+            </p>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
                 <a
@@ -80,7 +86,8 @@ const Remerciements = () => (
           </div>
           <div className="card-body">
             <p className="card-text">
-              Merci aux différents clients de l'entreprise{" "}
+              Merci aux différents clients de l'entreprise qui m'ont apportés
+              confiance en moi
               <strong>CIMRA</strong>.
             </p>
           </div>
@@ -92,11 +99,14 @@ const Remerciements = () => (
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
-            <h2 className="card-title mb-0">Équipe Relation École et Entreprise</h2>
+            <h2 className="card-title mb-0">
+              Équipe Relation École et Entreprise
+            </h2>
           </div>
           <div className="card-body">
             <p className="card-text">
-              Merci à l'équipe relation école et entreprise.
+              Merci à l'équipe relation école et entreprise pour leurs
+              réactivités
             </p>
           </div>
         </div>

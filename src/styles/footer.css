@@ -1,6 +1,6 @@
 footer {
   background-color: #f8f9fa;
-  border-top: 1px solid rgb(80, 112, 117);
+  border-top: 1px solid var(--primary);
   padding: 1rem;
   text-align: center;
   bottom: 0;
@@ -20,10 +20,10 @@ footer p strong {
 
 footer p::before {
   content: "— ";
-  color: rgb(80, 112, 117);
+  color: var(--primary);
 }
 
 footer p::after {
   content: " —";
-  color: rgb(80, 112, 117);
+  color: var(--primary);
 }

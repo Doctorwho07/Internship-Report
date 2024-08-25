@@ -89,14 +89,14 @@ const projects = [
         image: "/work/openvpn-pfsense.png",
       },
       {
-        projet: "Cours de cybersécurité et certification ArcServe",
+        projet: "Cours de cybersécurité",
         date: "26/07/2024",
         statut: "Terminé",
         logiciels: "Windows",
         problemes:
-          "Je souhaite m'orienter en cybersécurité, mais mes connaissances sont faibles. Pour réussir a faire mes restauration en cas d'incident je devais connaitre le logiciel",
+          "Je souhaite m'orienter en cybersécurité, mais mes connaissances sont faibles.",
         solutions:
-          "Mon responsable de stage, Antoine, est également professeur en cybersécurité. Il m'a permis de comprendre les enjeux, les vulnérabilités, et m'a donné une nouvelle vision des choses. Pour la restauration j'ai decide de passer la certification que j'ai raté a 1% près",
+          "Mon responsable de stage, Antoine, est également professeur en cybersécurité. Il m'a permis de comprendre les enjeux, les vulnérabilités, et m'a donné une nouvelle vision des choses.",
         connaissances:
           "J'ai appris à changer le mot de passe de session d'un utilisateur sans avoir accès à sa session, j'ai appris à faire du phishing et à retrouver des mots de passe à partir de données personnelles.",
         image: "/work/backup-job.png",
@@ -191,6 +191,39 @@ const projects = [
           "Après diagnostic, j'ai remplacé les composants défectueux (RAM et alimentation) et effectué un test pour vérifier la stabilité du système.",
         connaissances:
           "J'ai appris à diagnostiquer des problèmes matériels et à effectuer un remplacement de composants critiques dans un environnement serveur.",
+        image: "/customer/PC-fixe-composants.jpg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    theme: "Certification",
+    image: "/work/arcserve-spx.png",
+    posts: [
+      {
+        projet: "Passage de la certification ArcServe",
+        date: "01/07/2024",
+        statut: "en cours",
+        logiciels: "Windows, ArcServe",
+        problemes:
+          "Avant d'effectuer une restauration de serveur, il est important de s'assurer que les disques durs sont en bon état. Une restauration sur des disques défaillants peut entraîner des pertes de données.",
+        solutions:
+          "J'ai utilisé CrystalDisk et le Data Center de Dell pour évaluer la santé des disques durs.",
+        connaissances:
+          "J'ai appris à utiliser ces outils et à identifier les indicateurs de santé S.M.A.R.T pour déterminer si un disque est en bon état ou doit être remplacé.",
+        image: "/work/hd-tune/test.png",
+      },
+      {
+        projet: "Remplacement de composants défectueux",
+        date: "08/07/2024 - 09/07/2024",
+        statut: "Terminé",
+        logiciels: "Windows",
+        problemes:
+          "Pour réussir a faire mes restauration en cas d'incident je devais connaitre le logiciel sur lequel je travaille. ArcServe propose des leçons et des certifications, pour reussir il faut 80%",
+        solutions:
+          "J'ai donc passer la certification ArcServe, que j'ai raté à trois reprises dont la dernière à 1% près.",
+        connaissances:
+          "j'ai malgre tout appris a me servir des outils ArcServe en crossplateform et je suis capable d'effectuer une sauvegarde incrémentielle auto-réparatrice ainsi que la restaurée. Il me reste un essai que je ferai apres avoir continué mes recherches.",
         image: "/customer/PC-fixe-composants.jpg",
       },
     ],

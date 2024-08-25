@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import projects from "../Projects";
@@ -60,6 +61,9 @@ const Detail = () => {
           </div>
         </div>
       </div>
+      <Link to="/about" className="btn btn-lg mt-4">
+        Retour aux articles
+      </Link>
     </div>
   );
 };
