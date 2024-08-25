@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import projects from "../Bilan.js";
+import projects from "../Projects.js";
 
 const Bilan = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
-  const getSortedProjects = () => {
-    let sortedProjects = [...projects];
+  const getSortedPosts = () => {
+    let allPosts = projects.flatMap((project) =>
+      project.posts.map((post) => ({
+        ...post,
+        theme: project.theme,
+      }))
+    );
+
     if (sortConfig.key !== null) {
-      sortedProjects.sort((a, b) => {
+      allPosts.sort((a, b) => {
         if (a[sortConfig.key] < b[sortConfig.key]) {
           return sortConfig.direction === "asc" ? -1 : 1;
         }
@@ -17,7 +23,7 @@ const Bilan = () => {
         return 0;
       });
     }
-    return sortedProjects;
+    return allPosts;
   };
 
   const handleSort = (key) => {
@@ -28,7 +34,7 @@ const Bilan = () => {
     setSortConfig({ key, direction });
   };
 
-  const sortedProjects = getSortedProjects();
+  const sortedPosts = getSortedPosts();
 
   return (
     <div className="container mt-5" id="bilan">
@@ -66,7 +72,11 @@ const Bilan = () => {
                 <table className="table">
                   <thead>
                     <tr>
-                      <th scope="col" onClick={() => handleSort("theme")}>
+                      <th
+                        scope="col"
+                        onClick={() => handleSort("theme")}
+                        className="d-none d-md-table-cell"
+                      >
                         Thème{" "}
                         {sortConfig.key === "theme"
                           ? sortConfig.direction === "asc"
@@ -82,7 +92,11 @@ const Bilan = () => {
                             : "▼"
                           : ""}
                       </th>
-                      <th scope="col" onClick={() => handleSort("statut")}>
+                      <th
+                        scope="col"
+                        onClick={() => handleSort("statut")}
+                        className="status"
+                      >
                         Statut{" "}
                         {sortConfig.key === "statut"
                           ? sortConfig.direction === "asc"
@@ -90,7 +104,11 @@ const Bilan = () => {
                             : "▼"
                           : ""}
                       </th>
-                      <th scope="col" onClick={() => handleSort("date")}>
+                      <th
+                        scope="col"
+                        onClick={() => handleSort("date")}
+                        className="date"
+                      >
                         Date{" "}
                         {sortConfig.key === "date"
                           ? sortConfig.direction === "asc"
@@ -98,7 +116,11 @@ const Bilan = () => {
                             : "▼"
                           : ""}
                       </th>
-                      <th scope="col" onClick={() => handleSort("logiciels")}>
+                      <th
+                        scope="col"
+                        onClick={() => handleSort("logiciels")}
+                        className="d-none d-md-table-cell"
+                      >
                         Logiciels{" "}
                         {sortConfig.key === "logiciels"
                           ? sortConfig.direction === "asc"
@@ -109,13 +131,15 @@ const Bilan = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {sortedProjects.map((project, index) => (
+                    {sortedPosts.map((post, index) => (
                       <tr key={index}>
-                        <td>{project.theme}</td>
-                        <td>{project.projet}</td>
-                        <td>{project.statut}</td>
-                        <td>{project.date}</td>
-                        <td>{project.logiciels}</td>
+                        <td className="d-none d-md-table-cell">{post.theme}</td>
+                        <td>{post.projet}</td>
+                        <td className="status">{post.statut}</td>
+                        <td className="date">{post.date}</td>
+                        <td className="d-none d-md-table-cell">
+                          {post.logiciels}
+                        </td>
                       </tr>
                     ))}
                   </tbody>

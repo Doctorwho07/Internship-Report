@@ -62,5 +62,9 @@ a {
   object-fit: cover;
 }
 th:hover {
-  cursor: pointer;
+  cursor: pointer !important;
+}
+.status,
+.date {
+  text-align: center;
 }

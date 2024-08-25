@@ -1,46 +1,42 @@
 import React from "react";
-import articles from "../articlesTab.js";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import projects from "../Projects.js";
 
-const Articles = () => (
-  <div className="container mt-5" id="articles">
-    <h1 className="mb-4">Articles</h1>
-    <div className="row">
-      {articles.map((article, index) => (
-        <div key={index} className="col-md-4 mb-4">
-          <div className="card">
-            <img
-              src={`${article.photo}`}
-              alt={article.title}
-              className="card-img-top"
-            />
-            <div className="card-body">
-              <h5 className="card-title">{article.title}</h5>
-              <p className="card-text">
-                <strong>Date:</strong>{" "}
-                {new Date(article.dateCreated).toLocaleDateString()}
-                <br />
-                <strong>Thème:</strong> {article.theme}
-              </p>
-              <p className="card-text">{article.description}</p>
-            </div>
-            <ul className="list-group list-group-flush">
-              {article.content.map((item, itemIndex) => (
-                <li key={itemIndex} className="list-group-item">
-                  <h6>{item.subtitle}</h6>
-                  <p>{item.details}</p>
-                  <img
-                    src={`${item.photo}`}
-                    alt={item.subtitle}
-                    className="img-fluid"
-                  />
+const Articles = () => {
+  return (
+    <div>
+      <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+        {projects.map((project, index) => (
+          <div key={index}>
+            <h3>{project.theme}</h3>
+            {project.image && <img src={project.image} alt={project.title} />}
+          </div>
+        ))}
+      </Carousel>
+
+      <div>
+        {projects.map((project, index) => (
+          <div key={index}>
+            <h2>{project.title}</h2>
+            <ul>
+              {project.posts.map((post, postIndex) => (
+                <li key={postIndex}>
+                  <strong>{post.projet}</strong>
+                  <br />
+                  <span>Date: {post.date}</span>
+                  <br />
+                  <span>Statut: {post.statut}</span>
+                  <br />
+                  <span>Logiciels: {post.logiciels}</span>
                 </li>
               ))}
             </ul>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Articles;

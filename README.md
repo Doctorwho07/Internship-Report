@@ -30,8 +30,6 @@ Cette expérience a été très enrichissante et m'a permis de :
 
 Ce stage a également confirmé mon intérêt pour **[secteur/domaine]** 🌟, et je suis convaincu que les compétences acquises me seront précieuses pour la suite de mon parcours professionnel 🚀.
 
-
-
 to do :
 npm i
 npm install bootstrap-icons
@@ -40,3 +38,4 @@ rpm run dev
 npm install react react-dom
 npm install @vitejs/plugin-react
 npm install react-router-dom
+npm install react-responsive-carousel
