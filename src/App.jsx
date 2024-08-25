@@ -13,6 +13,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SiteMap from "./pages/SiteMap";
 import NotFound from "./pages/NotFound";
+import Detail from "./pages/Detail";
 
 const App = () => (
   <Router>
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/remerciements" element={<Remerciements />} />
           <Route path="/sitemap" element={<SiteMap />} />
+          <Route path="/projects/:id" element={<Detail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

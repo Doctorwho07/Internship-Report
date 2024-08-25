@@ -1,7 +1,16 @@
+:root {
+  --primary: #507075;
+  --secondary: #333;
+  --text: #555;
+  --white: #fff;
+  --card-background: #f8f9fa;
+  --muted-text: #666;
+}
+
 body {
   font-family: Arial, sans-serif;
-  color: #555;
-  background-color: #fff;
+  color: var(--text);
+  background-color: var(--white);
   margin: 0;
   padding: 0;
 }
@@ -12,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #213547;
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
@@ -22,14 +31,14 @@ p {
 }
 
 a {
-  color: rgb(80, 112, 117);
+  color: var(--primary);
   text-decoration: none;
 }
 
 .card {
   margin-top: 2rem;
-  border: 1px solid #507075;
-  background-color: #f8f9fa;
+  border: 1px solid var(--primary);
+  background-color: var(--card-background);
 }
 
 .card-body {
@@ -38,17 +47,17 @@ a {
 
 .card-title {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--secondary);
 }
 
 .card-text {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--muted-text);
 }
 
 .list-group-item {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--secondary);
 }
 
 .image {
@@ -56,26 +65,42 @@ a {
   height: 400px;
   object-fit: cover;
 }
+
 .logo {
   width: 150px;
   height: 70px;
   object-fit: cover;
 }
+
 th:hover {
   cursor: pointer !important;
 }
+
 .status,
 .date {
   text-align: center;
 }
-.carousel .control-dots {
-  position: relative !important;
+.carousel .slider-wrapper {
+  overflow: visible !important;
 }
 .carousel {
-  display: flex !important;
-  flex-direction: column-reverse;
-  height: 60vh;
+  height: 65vh;
 }
+
 .slide {
   height: 100% !important;
+}
+
+.image-bg {
+  background-color: var(--card-background);
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 2px solid var(--primary);
+}
+.btn:hover {
+  transition: 0.3s;
+  border: 1px solid var(--primary);
 }
