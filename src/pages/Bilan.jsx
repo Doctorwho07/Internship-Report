@@ -59,7 +59,7 @@ const Bilan = () => {
         </div>
       </div>
       <div className="mt-4">
-        <a href="https://alexis-r.link" className="btn">
+        <a href="/Lettre de recommandation CIMRA.pdf" download className="btn">
           Ma lettre de recommandation CIMRA
         </a>
       </div>
