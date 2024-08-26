@@ -58,7 +58,11 @@ const Bilan = () => {
           </div>
         </div>
       </div>
-
+      <div className="mt-4">
+        <a href="https://alexis-r.link" className="btn">
+          Ma lettre de recommandation CIMRA
+        </a>
+      </div>
       <div className="row mb-5">
         <div className="col-md-12">
           <div className="card">

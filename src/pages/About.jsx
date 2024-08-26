@@ -3,23 +3,34 @@ import React from "react";
 const About = () => (
   <div className="container mt-5" id="about">
     <h1 className="mb-4">À propos</h1>
-    <p className="lead">
-      Bienvenue sur mon blog où je partage mes expériences professionnelles, les
-      erreurs rencontrées, et les solutions trouvées, en tant qu'étudiant en
-      troisième année de Bachelor à Lyon Ynov Campus. Pour obtenir un detail
-      complet de mes compétences et expériences professionnelles je vous invite
-      à consulter mon CV. Vous pouvez également retrouver mes differents réseaux
-      sociaux sur ma page gravatar.
-    </p>
-
+    <div className="row mb-5">
+      <div className="col-md-12">
+        <div className="card">
+          <div className="card-header">
+            <h2 className="card-title mb-0">1. Introduction</h2>
+          </div>
+          <div className="card-body">
+            <p className="card-text">
+              Bienvenue sur mon blog où je partage mes expériences
+              professionnelles, les erreurs rencontrées, et les solutions
+              trouvées, en tant qu'étudiant en troisième année de Bachelor à
+              Lyon Ynov Campus. Pour obtenir un detail complet de mes
+              compétences et expériences professionnelles je vous invite à
+              consulter mon CV. Vous pouvez également retrouver mes differents
+              réseaux sociaux sur ma page gravatar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div className="mt-4">
       <a href="/CV Alexis ROUCHES.pdf" download className="btn">
-        Télécharger mon CV
+        Télécharger Mon CV
       </a>
     </div>
     <div className="mt-4">
       <a href="https://alexis-r.link" className="btn">
-        Mon Profil
+        Mon Profil Numérique
       </a>
     </div>
 
