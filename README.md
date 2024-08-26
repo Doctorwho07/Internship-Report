@@ -1,6 +1,6 @@
 # Blog Professionnel
 
-Bienvenue sur mon blog professionnel où je partage mes expériences, les projets réalisés, les problèmes rencontrés et les solutions apportées. Ce blog est un espace pour documenter mon parcours en tant qu'étudiant en troisième année de Bachelor à Lyon Ynov Campus, avec un focus sur l'infrastructure réseau, la cybersécurité, le support technique et la maintenance matériel.
+Bienvenue sur mon blog professionnel où je partage mes expériences, les projets réalisés, les problèmes rencontrés et les solutions apportées. Ce blog est un espace pour documenter mon parcours en tant qu'étudiant en troisième année de Bachelor à Lyon Ynov Campus, avec un focus sur l'infrastructure réseau et la cybersécurité.
 
 ## Technologies Utilisées
 
