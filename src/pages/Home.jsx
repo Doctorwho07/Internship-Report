@@ -8,7 +8,7 @@ const Home = () => (
       <p className="lead">
         Je suis Alexis ROUCHES, étudiant en Cybersécurité à Lyon Ynov Campus.{" "}
         <br />
-        Je vous invite à Explorez mon parcours et mes réalisations.
+        Je vous invite à Explorer mon parcours et mes réalisations.
       </p>
       <Link to="/about" className="btn btn-lg mt-4">
         Découvrir
